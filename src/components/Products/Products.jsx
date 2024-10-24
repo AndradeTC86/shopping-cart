@@ -10,7 +10,7 @@ function Products(){
     const { products, setProducts, loading, setLoading } = useContext(AppContext)    
 
     useEffect(() => {
-        fetchProducts('mouse').then((response) => {
+        fetchProducts().then((response) => {
             setProducts(response)
             setLoading(false)
         })
